@@ -120,7 +120,7 @@ Com o objetivo de tornar o agente cada vez mais eficiente e relevante em situaç
 
 ## (IR ALÉM) 🚀 Próximos Passos e Visão Futura: Expansão para Aplicativo Móvel
 
-Além dos upgrades para o futoro anteriormente citado, visando ampliar ainda mais o impacto e a eficácia da solução desenvolvida, propomos a evolução do projeto para um aplicativo móvel robusto e proativo. O objetivo é ir além da comunicação reativa, oferecendo um sistema de monitoramento individualizado e preditivo, voltado à prevenção de desaparecimentos em cenários de desastre. A ideia é ir além da comunicação passiva e reativa, oferecendo uma camada adicional de proteção à vida humana por meio de análise preditiva, geolocalização e inteligência de rede.
+Além dos upgrades para o futoro anteriormente citados, visando ampliar ainda mais o impacto e a eficácia da solução desenvolvida, propomos a evolução do projeto para um aplicativo móvel robusto e proativo. O objetivo é ir além da comunicação reativa, oferecendo um sistema de monitoramento individualizado e preditivo, voltado à prevenção de desaparecimentos em cenários de desastre. A ideia é ir além da comunicação passiva e reativa, oferecendo uma camada adicional de proteção à vida humana por meio de análise preditiva, geolocalização e inteligência de rede.
 
 **🚀 Visão Geral**
 
