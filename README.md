@@ -308,8 +308,10 @@ Dessa forma, o circuito simulado no Wokwi representa fielmente um sistema de mon
 
 ## Conexão com o wifi e envio de dados para a API
 
-Para que a simulação funcione corretamente, é necessário configurar a conexão com Wi-Fi simulado do Wokwi em como, configurar o IP do servidor local da API.
-No momento, neste MVP a api e a simulação do ESP32 estão rodando localmente. 
+Para que a simulação funcione corretamente, é necessário configurar a conexão com Wi-Fi simulado do Wokwi com o IP do servidor local da API.
+<br/>
+No momento, neste MVP, a api e a simulação do ESP32 estão rodando apenas localmente.
+<br/>
 Para a confirguração funcionar corretamente, é necessário alterar o arquivo [platformio.ini](src/wokwi/platformio.ini) e setar a váriavel 'API_URL' para 'http://**IP DE SUA MÁQUINA NA REDE LOCAL**:8180' conforme exemplo abaixo:
 
 ```plaintext
@@ -325,7 +327,7 @@ build_flags =
     '-D NETWORK_PASSWORD=""'
 ```
 
->NOTA1: Não sete o ip da API para localhost ou 127.0.0.1 pois o ESP32 não conseguirá se conectar a ele, pois o localhost do ESP32 é o próprio ESP32 e não a máquina onde o servidor está rodando.
+>NOTA1: Não sete o ip da API para localhost ou 127.0.0.1 pois o ESP32 não conseguirá se conectar a ele. O localhost do ESP32 é o próprio ESP32 e não a máquina onde o simulador está rodando.
 
 >NOTA2: Caso você esteja rodando a simulação e mesmo assim o ESP32 não consiga se conectar a API, verifique se o firewall da sua máquina está bloqueando a porta 8180, caso esteja, libere a porta para que o ESP32 consiga se conectar.
 
@@ -334,7 +336,7 @@ Após configurado o arquivo `platformio.ini`, você poderá iniciar a simulaçã
 
 ## API para salvar os dados do sensor
 
-Neste MVP, foi implementada uma API básica utilizando o FastAPI para receber os dados do sensor e armazená-los no banco de dados. A API permite que o ESP32 envie as leituras dos sensores, que são então salvas no banco de dados para posterior análise e visualização.
+Neste MVP, foi implementada uma API básica utilizando o FastAPI para receber os dados do sensor e armazená-los no banco de dados. A API permite que o ESP32 envie as leituras dos sensores, que então são salvas no banco de dados para posterior análise e visualização.
 Para facilitar os testes, a API está configurada para rodar localmente na porta 8180 e será iniciada automaticamente junto ao dashboard ao executar o comando `streamlit run main_dash.py` quando a variável de ambiente `ENABLE_API` for setada como `true`.
 No entanto, caso queira, a api pode ser executada separadamente executando o arquivo [api_basica.py](src/wokwi_api/api_basica.py).
 
@@ -917,7 +919,7 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 - <b>.gitignore</b>: Arquivo que especifica quais arquivos e pastas devem ser ignorados pelo Git, evitando que informações sensíveis ou desnecessárias sejam versionadas. É importante garantir que o arquivo `.env` esteja incluído neste arquivo para evitar o upload de chaves de API e outras informações sensíveis.
 - <b>README</b>: Arquivo de documentação do projeto (este que está sendo lido), com orientações gerais, instruções de uso e contextualização.
 - <b>main_dash</b>: Arquivo principal para a execução do dashboard. Está localizado na raiz do projeto com o objetivo de evitar problemas com importações de módulos internos.
-- - <b>requirements.txt</b>: Arquivo que lista todas as dependências do projeto, necessário para a instalação do ambiente virtual. Deve ser utilizado com o comando `pip install -r requirements.txt` para instalar as bibliotecas necessárias.
+- <b>requirements.txt</b>: Arquivo que lista todas as dependências do projeto, necessário para a instalação do ambiente virtual. Deve ser utilizado com o comando `pip install -r requirements.txt` para instalar as bibliotecas necessárias.
 
 ## 🗃 Histórico de versionamento
 
