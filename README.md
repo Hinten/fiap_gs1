@@ -40,6 +40,8 @@ Como base de dados para o treinamento e validação do modelo de IA, utilizamos 
 
 **Confira uma versão do projeto rodando no servidor do Streamlit!**
 
+(https://neura5.streamlit.app/)(https://neura5.streamlit.app/)
+
 ## Introdução
 
 Nos últimos anos, o IPCC documentou que eventos de precipitação intensa aumentam em cerca de **7% a cada 1 °C de aquecimento**, resultando em inundações mais severas e frequentes. Esse agravamento se reflete em dados regionais: entre 2000 e 2023, a **EM-DAT registrou 505 desastres hidrológicos** na América do Sul, com **mais de 10 694 óbitos**. No Brasil, as enchentes de janeiro de 2020 **deslocaram entre 30 000 e 46 500 pessoas** e causaram pelo menos **70 mortes**.
