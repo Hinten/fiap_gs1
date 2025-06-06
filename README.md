@@ -40,7 +40,7 @@ Como base de dados para o treinamento e validação do modelo de IA, utilizamos 
 
 **Confira uma versão do projeto rodando no servidor do Streamlit!**
 
-(https://neura5.streamlit.app/)(https://neura5.streamlit.app/)
+[https://neura5.streamlit.app/](https://neura5.streamlit.app/)
 
 >ATENÇÃO: É NECESSÁRIO TER UMA CONTA NA DATABASE DA FIAP PARA TER ACESSO AO PROJETO RODANDO NO LINK ACIMA!!!
 
