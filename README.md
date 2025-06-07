@@ -655,6 +655,12 @@ O limite de requisições da API é de 60 requisições por minuto e 1500 requis
   <img src="assets/readme/dashboard/erro_503.JPG" alt="erro_503" border="0" width=70% height=70%>
 </p>
 
+Outro erro que pode ocorrer é "json.decoder.JSONDecodeError", isso ocorre quando, por algum motivo, o agente manda a resposta em um formato inesperado. Este erro pode ocorrer principalmente após ele gerar uma imagem.
+Caso o erro ocorra, o usuário pode tentar novamente a interação com o agente, ou clicar no botão "Novo Chat" para reiniciar a conversa.
+<p align="center">
+  <img src="assets/readme/dashboard/erro_json.png" alt="erro_json" border="0" width=70% height=70%>
+</p>
+
 ## Possíveis alucinações que o agente pode ter
 
 O agente não é perfeito e pode apresentar alucinações — ou seja, gerar informações incorretas, irrelevantes ou até mesmo começar a responder em inglês.
